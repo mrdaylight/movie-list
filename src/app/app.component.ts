@@ -8,7 +8,6 @@ import { MovieService } from './movie.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'movie-list';
   movies=[];
 
   constructor(private movieService: MovieService) { }
@@ -17,5 +16,4 @@ export class AppComponent {
   this.movies = this.movieService.getMovies();
   console.log(this.movies);
   }
-
 }
